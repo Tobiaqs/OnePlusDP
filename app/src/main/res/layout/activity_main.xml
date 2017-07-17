@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main">
+
+    <LinearLayout
+        android:id="@+id/controls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/about"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_between_display_elements"
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:text="@string/tamper_flag"
+            android:id="@+id/info_tamper"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_between_display_elements"
+            android:id="@+id/switch_tamper" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_between_display_elements"
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:text="@string/unlocked_flag"
+            android:id="@+id/info_unlocked"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_between_display_elements"
+            android:id="@+id/switch_unlocked" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_between_display_elements"
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:text="@string/disable_recovery"
+            android:id="@+id/info_recovery"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_between_display_elements"
+            android:id="@+id/switch_disable_recovery" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_between_display_elements"
+            android:gravity="center_horizontal"
+            android:text="@string/help"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.DeviceDefault.Large"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal" />
+</FrameLayout>

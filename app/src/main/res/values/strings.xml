@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">OnePlus Data Protector</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="tamper_flag">Tamper flag</string>
+    <string name="tamper_help">The tamper flag is a byte in the aboot partition that is set whenever images are flashed through fastboot. It is of no importance for device security.</string>
+    <string name="unlocked_flag">Unlocked bootloader</string>
+    <string name="unlocked_help">The unlocked flag is a byte in the aboot partition that determines whether the device\'s partitions may be overwritten in fastboot mode. Setting this to false will prevent a thief from installing malicious software on your phone without wiping it first. Also known as bootloader lock.</string>
+    <string name="disable_recovery">Disable recovery program</string>
+    <string name="disable_recovery_help">Enabling this setting will create a full backup of your recovery partition and then erase it, rendering the recovery program inaccessible. Disabling it will restore the backup and re-enable the recovery program. This is useful in cases where the recovery program directly or indirectly exposes user data (TWRP among others does this).\n\nThe backup will be placed in this app\'s data directory.</string>
+
+    <string name="about">This app can be used to maximize the protection of the data on your rooted phone in situations in which someone has physical access to your device.</string>
+    <string name="help">You can tap on the different flag labels to get more information on their meaning. For optimal security, lock the bootloader and disable the recovery program. Also make sure ADB is disabled.\n\n
+        Source code for this app is available on:\n
+        github.com/tobiaqs/oneplusdp</string>
+
+    <string name="error_no_root">Can\'t get root access.</string>
+    <string name="error_reading">Reading flags failed.</string>
+    <string name="error_writing">Writing flags failed.</string>
+
+    <string name="disabling_recovery">Disabling recovery program</string>
+    <string name="enabling_recovery">Enabling recovery program</string>
+    <string name="writing">Flipping some bits</string>
+    <string name="please_wait">Please wait&#8230;</string>
+</resources>
