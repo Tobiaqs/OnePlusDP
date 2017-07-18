@@ -52,7 +52,7 @@ public class Main extends Activity implements CompoundButton.OnCheckedChangeList
         if(RootShell.isAccessGiven()) {
             try {
                 mTamperSwitch.setChecked(readByteFromCommand("dd ibs=1 count=1 skip=" + OFFSET_TAMPER_FLAG + " if=" + BOOT_IMAGE_PATH) == 1);
-                mUnlockedSwitch.setChecked(readByteFromCommand("dd ibs=1 count=1 skip=" + OFFSET_TAMPER_FLAG + " if=" + BOOT_IMAGE_PATH) == 1);
+                mUnlockedSwitch.setChecked(readByteFromCommand("dd ibs=1 count=1 skip=" + OFFSET_UNLOCK_FLAG + " if=" + BOOT_IMAGE_PATH) == 1);
                 mDisableRecoverySwitch.setChecked(new File(mRecoveryImageBackupPath).exists());
             } catch (IOException e) {
                 showError(R.string.error_reading);
